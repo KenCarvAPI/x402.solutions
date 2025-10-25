@@ -22,12 +22,12 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-sm border-b border-border shadow-sm' 
-          : 'bg-white/80 backdrop-blur-sm'
+        isScrolled
+          ? 'bg-white/95 backdrop-blur-md border-b border-border shadow-sm'
+          : 'bg-white/80 backdrop-blur-md'
       }`}>
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="flex justify-between items-center py-5">
             <div className="flex items-center space-x-3">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">X</span>
@@ -36,10 +36,10 @@ export default function Home() {
             </div>
             
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
-              <a href="#ecosystem" className="text-text-muted hover:text-foreground transition-colors text-sm font-medium">Ecosystem</a>
-              <a href="#submit" className="text-text-muted hover:text-foreground transition-colors text-sm font-medium">Submit Project</a>
-              <a href="#docs" className="text-text-muted hover:text-foreground transition-colors text-sm font-medium">Documentation</a>
+            <nav className="hidden md:flex space-x-10">
+              <a href="#ecosystem" className="text-text-muted hover:text-foreground transition-colors text-sm font-semibold tracking-wide">Ecosystem</a>
+              <a href="#submit" className="text-text-muted hover:text-foreground transition-colors text-sm font-semibold tracking-wide">Submit Project</a>
+              <a href="#docs" className="text-text-muted hover:text-foreground transition-colors text-sm font-semibold tracking-wide">Documentation</a>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -83,27 +83,27 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <section className="py-24 sm:py-32 lg:py-40 px-6 sm:px-8 lg:px-12 relative overflow-hidden">
         {/* Subtle background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none"></div>
-        <div className="max-w-container mx-auto text-center relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.03] via-transparent to-accent/[0.03] pointer-events-none"></div>
+        <div className="max-w-5xl mx-auto text-center relative">
           <h1 className="text-heading-1 text-foreground mb-6 animate-fade-in-up">
             The internet-native payment protocol
           </h1>
-          <p className="text-body text-text-muted mb-12 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-body text-text-muted mb-10 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             Fast, cheap, and AI-friendly payments for the x402 ecosystem
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <a 
-              href="#ecosystem" 
-              className="bg-primary text-white px-8 py-4 rounded-button font-semibold hover:bg-primary-dark transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105"
+          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <a
+              href="#ecosystem"
+              className="bg-primary text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Explore Ecosystem
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-2 w-4 h-4" />
             </a>
-            <a 
-              href="#submit" 
-              className="border border-border text-foreground px-8 py-4 rounded-button font-semibold hover:bg-secondary transition-all duration-300 hover:border-primary hover:scale-105"
+            <a
+              href="#submit"
+              className="border-2 border-border text-foreground px-8 py-3.5 rounded-lg font-semibold hover:bg-secondary hover:border-foreground transition-all duration-300"
             >
               Submit Project
             </a>
@@ -112,21 +112,21 @@ export default function Home() {
       </section>
 
       {/* Partners Section */}
-      <section className="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-heading-2 text-foreground mb-4">Built on x402</h2>
+      <section className="py-20 sm:py-28 lg:py-32 px-6 sm:px-8 lg:px-12 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-heading-2 text-foreground mb-5">Built on x402</h2>
             <p className="text-body text-text-muted max-w-2xl mx-auto">
               Trusted by leading companies and developers worldwide
             </p>
           </div>
-          
+
           {/* Partner Logos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center opacity-60">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 items-center justify-items-center opacity-50">
             {['Circle', 'AWS', 'Hyperbolic', 'OpenMind', 'Chainlink', 'Polygon', 'Arbitrum', 'Optimism', 'Base', 'Solana'].map((partner, index) => (
-              <div 
+              <div
                 key={partner}
-                className="text-text-muted font-semibold text-lg hover:text-primary transition-colors duration-300 cursor-default"
+                className="text-foreground font-bold text-base hover:text-primary transition-colors duration-300 cursor-default tracking-tight"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {partner}
@@ -137,17 +137,17 @@ export default function Home() {
       </section>
 
       {/* Ecosystem Section */}
-      <section id="ecosystem" className="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-secondary">
-        <div className="max-w-container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-heading-2 text-foreground mb-4">Ecosystem Projects</h2>
+      <section id="ecosystem" className="py-24 sm:py-32 lg:py-40 px-6 sm:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-heading-2 text-foreground mb-5">Ecosystem Projects</h2>
             <p className="text-body text-text-muted max-w-2xl mx-auto">
               Discover the innovative projects building on x402
             </p>
           </div>
-          
+
           {/* Project Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard
               name="Payment Gateway"
               description="A comprehensive payment processing solution for merchants, enabling seamless x402 transactions with advanced fraud protection and real-time settlement."
@@ -206,10 +206,10 @@ export default function Home() {
       </section>
 
       {/* Submit Project Section */}
-      <section id="submit" className="py-20 sm:py-24 lg:py-32 bg-secondary">
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="submit" className="py-24 sm:py-32 lg:py-40 bg-white">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
-            <h2 className="text-heading-2 text-foreground mb-4">Submit Your Project</h2>
+            <h2 className="text-heading-2 text-foreground mb-5">Submit Your Project</h2>
             <p className="text-body text-text-muted max-w-2xl mx-auto">
               Building something amazing on x402? Share it with the ecosystem and get discovered.
             </p>
@@ -219,8 +219,8 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground text-white py-16 sm:py-20">
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="bg-foreground text-white py-20 sm:py-24">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="sm:col-span-2 lg:col-span-1">
               <div className="flex items-center space-x-3 mb-6">

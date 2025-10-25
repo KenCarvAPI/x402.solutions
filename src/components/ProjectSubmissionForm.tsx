@@ -71,76 +71,76 @@ export default function ProjectSubmissionForm() {
   };
 
   return (
-    <div id="contact-form" className="max-w-2xl mx-auto card p-8">
-      <div className="text-center mb-8">
-        <h2 className="text-heading-3 text-foreground mb-3">Submit Your Project</h2>
-        <p className="text-body-small text-text-muted">
+    <div id="contact-form" className="max-w-3xl mx-auto card p-10">
+      <div className="text-center mb-10">
+        <h3 className="text-2xl font-semibold text-foreground mb-3">Project Details</h3>
+        <p className="text-body-small text-text-muted leading-relaxed">
           Join the x402 ecosystem by submitting your project. Our AI agent will process your submission and help showcase your work.
         </p>
       </div>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-7">
         {/* Project Name */}
         <div>
-          <label htmlFor="projectName" className="block text-sm font-semibold text-foreground mb-2">
+          <label htmlFor="projectName" className="block text-sm font-semibold text-foreground mb-2.5">
             Project Name *
           </label>
           <input
             {...register('projectName')}
             type="text"
             id="projectName"
-            className="w-full px-4 py-3 border border-border rounded-card focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-body-small hover:border-primary/50"
+            className="w-full px-4 py-3.5 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200 text-body-small hover:border-slate-300"
             placeholder="Enter your project name"
           />
           {errors.projectName && (
-            <p className="mt-1 text-sm text-red-600">{errors.projectName.message}</p>
+            <p className="mt-2 text-sm text-red-600 font-medium">{errors.projectName.message}</p>
           )}
         </div>
 
         {/* Description */}
         <div>
-          <label htmlFor="description" className="block text-sm font-semibold text-foreground mb-2">
+          <label htmlFor="description" className="block text-sm font-semibold text-foreground mb-2.5">
             Project Description *
           </label>
           <textarea
             {...register('description')}
             id="description"
-            rows={4}
-            className="w-full px-4 py-3 border border-border rounded-card focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 resize-none hover:border-primary/50"
+            rows={5}
+            className="w-full px-4 py-3.5 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200 resize-none hover:border-slate-300 leading-relaxed"
             placeholder="Describe your project, its features, and how it uses x402..."
           />
           {errors.description && (
-            <p className="mt-1 text-sm text-red-600">{errors.description.message}</p>
+            <p className="mt-2 text-sm text-red-600 font-medium">{errors.description.message}</p>
           )}
         </div>
 
         {/* Website */}
         <div>
-          <label htmlFor="website" className="block text-sm font-semibold text-foreground mb-2">
+          <label htmlFor="website" className="block text-sm font-semibold text-foreground mb-2.5">
             Website URL
           </label>
           <input
             {...register('website')}
             type="url"
             id="website"
-            className="w-full px-4 py-3 border border-border rounded-card focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-body-small hover:border-primary/50"
+            className="w-full px-4 py-3.5 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200 text-body-small hover:border-slate-300"
             placeholder="https://yourproject.com"
           />
           {errors.website && (
-            <p className="mt-1 text-sm text-red-600">{errors.website.message}</p>
+            <p className="mt-2 text-sm text-red-600 font-medium">{errors.website.message}</p>
           )}
         </div>
 
         {/* Category and Team Size */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-7">
           <div>
-            <label htmlFor="category" className="block text-sm font-semibold text-foreground mb-2">
+            <label htmlFor="category" className="block text-sm font-semibold text-foreground mb-2.5">
               Category *
             </label>
             <select
               {...register('category')}
               id="category"
-              className="w-full px-4 py-3 border border-border rounded-card focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-body-small hover:border-primary/50"
+              className="w-full px-4 py-3.5 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200 text-body-small hover:border-slate-300"
             >
               <option value="">Select a category</option>
               <option value="payment">Payment Processing</option>
@@ -152,18 +152,18 @@ export default function ProjectSubmissionForm() {
               <option value="other">Other</option>
             </select>
             {errors.category && (
-              <p className="mt-1 text-sm text-red-600">{errors.category.message}</p>
+              <p className="mt-2 text-sm text-red-600 font-medium">{errors.category.message}</p>
             )}
           </div>
 
           <div>
-            <label htmlFor="teamSize" className="block text-sm font-semibold text-foreground mb-2">
+            <label htmlFor="teamSize" className="block text-sm font-semibold text-foreground mb-2.5">
               Team Size *
             </label>
             <select
               {...register('teamSize')}
               id="teamSize"
-              className="w-full px-4 py-3 border border-border rounded-card focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-body-small hover:border-primary/50"
+              className="w-full px-4 py-3.5 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200 text-body-small hover:border-slate-300"
             >
               <option value="">Select team size</option>
               <option value="1">Solo Developer</option>
@@ -173,56 +173,56 @@ export default function ProjectSubmissionForm() {
               <option value="25+">25+ People</option>
             </select>
             {errors.teamSize && (
-              <p className="mt-1 text-sm text-red-600">{errors.teamSize.message}</p>
+              <p className="mt-2 text-sm text-red-600 font-medium">{errors.teamSize.message}</p>
             )}
           </div>
         </div>
 
         {/* Contact Information */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-7">
           <div>
-            <label htmlFor="contactName" className="block text-sm font-semibold text-foreground mb-2">
+            <label htmlFor="contactName" className="block text-sm font-semibold text-foreground mb-2.5">
               Contact Name *
             </label>
             <input
               {...register('contactName')}
               type="text"
               id="contactName"
-              className="w-full px-4 py-3 border border-border rounded-card focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-body-small hover:border-primary/50"
+              className="w-full px-4 py-3.5 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200 text-body-small hover:border-slate-300"
               placeholder="Your full name"
             />
             {errors.contactName && (
-              <p className="mt-1 text-sm text-red-600">{errors.contactName.message}</p>
+              <p className="mt-2 text-sm text-red-600 font-medium">{errors.contactName.message}</p>
             )}
           </div>
 
           <div>
-            <label htmlFor="contactEmail" className="block text-sm font-semibold text-foreground mb-2">
+            <label htmlFor="contactEmail" className="block text-sm font-semibold text-foreground mb-2.5">
               Contact Email *
             </label>
             <input
               {...register('contactEmail')}
               type="email"
               id="contactEmail"
-              className="w-full px-4 py-3 border border-border rounded-card focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-body-small hover:border-primary/50"
+              className="w-full px-4 py-3.5 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200 text-body-small hover:border-slate-300"
               placeholder="your@email.com"
             />
             {errors.contactEmail && (
-              <p className="mt-1 text-sm text-red-600">{errors.contactEmail.message}</p>
+              <p className="mt-2 text-sm text-red-600 font-medium">{errors.contactEmail.message}</p>
             )}
           </div>
         </div>
 
         {/* Additional Information */}
         <div>
-          <label htmlFor="additionalInfo" className="block text-sm font-semibold text-foreground mb-2">
+          <label htmlFor="additionalInfo" className="block text-sm font-semibold text-foreground mb-2.5">
             Additional Information
           </label>
           <textarea
             {...register('additionalInfo')}
             id="additionalInfo"
-            rows={3}
-            className="w-full px-4 py-3 border border-border rounded-card focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 resize-none hover:border-primary/50"
+            rows={4}
+            className="w-full px-4 py-3.5 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200 resize-none hover:border-slate-300 leading-relaxed"
             placeholder="Any additional details, milestones, or special requirements..."
           />
         </div>
@@ -247,7 +247,7 @@ export default function ProjectSubmissionForm() {
         <button
           type="submit"
           disabled={formState.status === 'submitting'}
-          className="w-full bg-primary text-white py-4 px-6 rounded-button font-semibold hover:bg-primary-dark transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 hover:scale-105 disabled:hover:transform-none"
+          className="w-full bg-primary text-white py-4 px-6 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 disabled:hover:transform-none mt-2"
         >
           {formState.status === 'submitting' ? (
             <>
@@ -263,8 +263,8 @@ export default function ProjectSubmissionForm() {
         </button>
       </form>
 
-      <div className="mt-6 text-center text-sm text-text-muted">
-        <p>
+      <div className="mt-8 text-center text-sm text-text-muted">
+        <p className="leading-relaxed">
           By submitting this form, you agree to have your project reviewed and potentially featured on our ecosystem page.
         </p>
       </div>
