@@ -57,21 +57,21 @@ export default function Home() {
               <nav className="flex flex-col space-y-3 pt-4">
                 <a 
                   href="#ecosystem" 
-                  className="text-text-muted hover:text-foreground transition-colors py-2 text-sm font-medium"
+                  className="text-text-muted hover:text-foreground transition-colors py-2 text-sm font-medium text-center"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Ecosystem
                 </a>
                 <a 
                   href="#submit" 
-                  className="text-text-muted hover:text-foreground transition-colors py-2 text-sm font-medium"
+                  className="text-text-muted hover:text-foreground transition-colors py-2 text-sm font-medium text-center"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Submit Project
                 </a>
                 <a 
                   href="#docs" 
-                  className="text-text-muted hover:text-foreground transition-colors py-2 text-sm font-medium"
+                  className="text-text-muted hover:text-foreground transition-colors py-2 text-sm font-medium text-center"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Documentation
