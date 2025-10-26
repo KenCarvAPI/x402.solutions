@@ -122,7 +122,7 @@ export default function Home() {
           </div>
 
           {/* Project Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             <ProjectCard
               name="Payment Gateway"
               description="A comprehensive payment processing solution for merchants, enabling seamless x402 transactions with advanced fraud protection and real-time settlement."

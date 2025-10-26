@@ -33,9 +33,9 @@ export default function ProjectCard({
   };
 
   return (
-    <div className="card p-8 group cursor-pointer transition-all duration-300">
+    <div className="card p-8 group cursor-pointer transition-all duration-300 text-center">
       {/* Project Icon */}
-      <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-5 group-hover:scale-105 transition-all duration-300">
+      <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-5 mx-auto group-hover:scale-105 transition-all duration-300">
         {icon ? (
           <img src={icon} alt={name} className="w-8 h-8 rounded" />
         ) : (
@@ -63,7 +63,7 @@ export default function ProjectCard({
       </p>
 
       {/* Metrics Row */}
-      <div className="flex items-center justify-between text-sm text-text-muted mb-5 pt-4 border-t border-border">
+      <div className="flex items-center justify-center gap-3 text-sm text-text-muted mb-5 pt-4 border-t border-border">
         <span className="font-medium">Team: {teamSize}</span>
         <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getStatusColor(status)}`}>
           {status}
@@ -76,7 +76,7 @@ export default function ProjectCard({
           href={website}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-primary hover:text-primary-dark font-semibold text-sm transition-all duration-200 inline-flex items-center group/link"
+          className="text-primary hover:text-primary-dark font-semibold text-sm transition-all duration-200 inline-flex items-center justify-center group/link"
           onClick={(e) => e.stopPropagation()}
         >
           Learn more
