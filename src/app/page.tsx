@@ -86,27 +86,29 @@ export default function Home() {
       <section className="py-24 sm:py-32 lg:py-40 px-6 sm:px-8 lg:px-12 relative overflow-hidden">
         {/* Subtle background gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.03] via-transparent to-accent/[0.03] pointer-events-none"></div>
-        <div className="max-w-4xl mx-auto text-center relative">
-          <h1 className="text-heading-1 text-foreground mb-6 animate-fade-in-up">
-            The internet-native payment protocol
-          </h1>
-          <p className="text-body text-text-muted mb-10 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            Fast, cheap, and AI-friendly payments for the x402 ecosystem
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <a
-              href="#ecosystem"
-              className="bg-primary text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-            >
-              Explore Ecosystem
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </a>
-            <a
-              href="#submit"
-              className="border-2 border-border text-foreground px-8 py-3.5 rounded-lg font-semibold hover:bg-secondary hover:border-foreground transition-all duration-300"
-            >
-              Submit Project
-            </a>
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-4xl mx-auto text-center relative">
+            <h1 className="text-heading-1 text-foreground mb-6 animate-fade-in-up">
+              The internet-native payment protocol
+            </h1>
+            <p className="text-body text-text-muted mb-10 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              Fast, cheap, and AI-friendly payments for the x402 ecosystem
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+              <a
+                href="#ecosystem"
+                className="bg-primary text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              >
+                Explore Ecosystem
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
+              <a
+                href="#submit"
+                className="border-2 border-border text-foreground px-8 py-3.5 rounded-lg font-semibold hover:bg-secondary hover:border-foreground transition-all duration-300"
+              >
+                Submit Project
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -182,14 +184,16 @@ export default function Home() {
 
       {/* Submit Project Section */}
       <section id="submit" className="py-24 sm:py-32 lg:py-40 bg-white">
-        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <h2 className="text-heading-2 text-foreground mb-5">Submit Your Project</h2>
             <p className="text-body text-text-muted max-w-2xl mx-auto">
               Building something amazing on x402? Share it with the ecosystem and get discovered.
             </p>
           </div>
-          <ProjectSubmissionForm />
+          <div className="max-w-4xl mx-auto">
+            <ProjectSubmissionForm />
+          </div>
         </div>
       </section>
 
