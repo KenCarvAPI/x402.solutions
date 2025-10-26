@@ -72,13 +72,6 @@ export default function ProjectSubmissionForm() {
 
   return (
     <div id="contact-form" className="card p-10">
-      <div className="text-center mb-10">
-        <h3 className="text-2xl font-semibold text-foreground mb-3">Project Details</h3>
-        <p className="text-body-small text-text-muted leading-relaxed">
-          Join the x402 ecosystem by submitting your project. Our AI agent will process your submission and help showcase your work.
-        </p>
-      </div>
-
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-7">
         {/* Project Name */}
         <div className="text-center">
