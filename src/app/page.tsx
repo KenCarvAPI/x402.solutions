@@ -136,6 +136,67 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Built for Developers Section */}
+      <section className="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-background">
+        <div className="max-w-container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-heading-2 text-foreground mb-4">Built for Developers</h2>
+            <p className="text-body text-text-muted max-w-3xl mx-auto">
+              x402 provides the infrastructure your applications need to operate seamlessly across the network
+            </p>
+          </div>
+
+          {/* Feature Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* ENS-Based Resolution Card */}
+            <div className="bg-white rounded-card shadow-card p-10 hover:shadow-card-hover transition-all duration-300">
+              <div className="w-14 h-14 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg flex items-center justify-center mb-6">
+                <Globe className="w-7 h-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-3">ENS-Based Resolution</h3>
+              <p className="text-base text-text-muted leading-relaxed">
+                Resolve payment addresses using human-readable ENS names instead of long hexadecimal addresses
+              </p>
+            </div>
+
+            {/* Smart Payment Logic Card */}
+            <div className="bg-white rounded-card shadow-card p-10 hover:shadow-card-hover transition-all duration-300">
+              <div className="w-14 h-14 bg-gradient-to-br from-accent/10 to-accent/5 rounded-lg flex items-center justify-center mb-6">
+                <Zap className="w-7 h-7 text-accent" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-3">Smart Payment Logic</h3>
+              <p className="text-base text-text-muted leading-relaxed">
+                Customize payment flows with programmable logic, conditional routing, and automated triggers
+              </p>
+            </div>
+
+            {/* Cross-Chain Support Card */}
+            <div className="bg-white rounded-card shadow-card p-10 hover:shadow-card-hover transition-all duration-300">
+              <div className="w-14 h-14 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg flex items-center justify-center mb-6">
+                <Shield className="w-7 h-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-3">Cross-Chain Support</h3>
+              <p className="text-base text-text-muted leading-relaxed">
+                Seamless transactions across multiple blockchains with unified API and automatic bridge detection
+              </p>
+            </div>
+
+            {/* Developer Tools Card */}
+            <div className="bg-white rounded-card shadow-card p-10 hover:shadow-card-hover transition-all duration-300">
+              <div className="w-14 h-14 bg-gradient-to-br from-accent/10 to-accent/5 rounded-lg flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-3">Developer Tools</h3>
+              <p className="text-base text-text-muted leading-relaxed">
+                Comprehensive SDKs, testing frameworks, and debugging tools to build faster and smarter
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Ecosystem Section */}
       <section id="ecosystem" className="py-24 sm:py-32 lg:py-40 px-6 sm:px-8 lg:px-12">
         <div className="max-w-7xl mx-auto">
