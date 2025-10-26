@@ -191,9 +191,9 @@ export default function Home() {
               Building something amazing on x402? Share it with the ecosystem and get discovered.
             </p>
           </div>
-          <div className="max-w-4xl mx-auto">
-            <ProjectSubmissionForm />
-          </div>
+        </div>
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
+          <ProjectSubmissionForm />
         </div>
       </section>
 

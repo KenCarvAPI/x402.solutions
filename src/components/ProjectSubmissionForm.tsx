@@ -71,7 +71,7 @@ export default function ProjectSubmissionForm() {
   };
 
   return (
-    <div id="contact-form" className="max-w-3xl mx-auto card p-10">
+    <div id="contact-form" className="card p-10">
       <div className="text-center mb-10">
         <h3 className="text-2xl font-semibold text-foreground mb-3">Project Details</h3>
         <p className="text-body-small text-text-muted leading-relaxed">
