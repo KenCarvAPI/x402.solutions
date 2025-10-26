@@ -81,7 +81,7 @@ export default function ProjectSubmissionForm() {
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-7">
         {/* Project Name */}
-        <div>
+        <div className="text-center">
           <label htmlFor="projectName" className="block text-sm font-semibold text-foreground mb-2.5">
             Project Name *
           </label>
@@ -98,7 +98,7 @@ export default function ProjectSubmissionForm() {
         </div>
 
         {/* Description */}
-        <div>
+        <div className="text-center">
           <label htmlFor="description" className="block text-sm font-semibold text-foreground mb-2.5">
             Project Description *
           </label>
@@ -115,7 +115,7 @@ export default function ProjectSubmissionForm() {
         </div>
 
         {/* Website */}
-        <div>
+        <div className="text-center">
           <label htmlFor="website" className="block text-sm font-semibold text-foreground mb-2.5">
             Website URL
           </label>
@@ -133,7 +133,7 @@ export default function ProjectSubmissionForm() {
 
         {/* Category and Team Size */}
         <div className="grid md:grid-cols-2 gap-7">
-          <div>
+          <div className="text-center">
             <label htmlFor="category" className="block text-sm font-semibold text-foreground mb-2.5">
               Category *
             </label>
@@ -156,7 +156,7 @@ export default function ProjectSubmissionForm() {
             )}
           </div>
 
-          <div>
+          <div className="text-center">
             <label htmlFor="teamSize" className="block text-sm font-semibold text-foreground mb-2.5">
               Team Size *
             </label>
@@ -180,7 +180,7 @@ export default function ProjectSubmissionForm() {
 
         {/* Contact Information */}
         <div className="grid md:grid-cols-2 gap-7">
-          <div>
+          <div className="text-center">
             <label htmlFor="contactName" className="block text-sm font-semibold text-foreground mb-2.5">
               Contact Name *
             </label>
@@ -196,7 +196,7 @@ export default function ProjectSubmissionForm() {
             )}
           </div>
 
-          <div>
+          <div className="text-center">
             <label htmlFor="contactEmail" className="block text-sm font-semibold text-foreground mb-2.5">
               Contact Email *
             </label>
@@ -214,7 +214,7 @@ export default function ProjectSubmissionForm() {
         </div>
 
         {/* Additional Information */}
-        <div>
+        <div className="text-center">
           <label htmlFor="additionalInfo" className="block text-sm font-semibold text-foreground mb-2.5">
             Additional Information
           </label>
