@@ -111,31 +111,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section className="py-20 sm:py-28 lg:py-32 px-6 sm:px-8 lg:px-12 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-heading-2 text-foreground mb-5">Built on x402</h2>
-            <p className="text-body text-text-muted max-w-2xl mx-auto">
-              Trusted by leading companies and developers worldwide
-            </p>
-          </div>
-
-          {/* Partner Logos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 items-center justify-items-center opacity-50">
-            {['Circle', 'AWS', 'Hyperbolic', 'OpenMind', 'Chainlink', 'Polygon', 'Arbitrum', 'Optimism', 'Base', 'Solana'].map((partner, index) => (
-              <div
-                key={partner}
-                className="text-foreground font-bold text-base hover:text-primary transition-colors duration-300 cursor-default tracking-tight"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {partner}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Ecosystem Section */}
       <section id="ecosystem" className="py-24 sm:py-32 lg:py-40 px-6 sm:px-8 lg:px-12">
         <div className="max-w-7xl mx-auto">
